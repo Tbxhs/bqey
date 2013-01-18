@@ -1,0 +1,19 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+  username: postgres
+  password: wangbl@2012
+
+development:
+  <<: *defaults
+  database: bqey_development
+
+test:
+  <<: *defaults
+  database: bqey_test
+
+production:
+  <<: *defaults
+  database: bqey_production
